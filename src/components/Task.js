@@ -8,7 +8,8 @@ const Task = ({ id, title, isComplete }) => {
   const buttonClass = complete ? 'tasks__item__toggle--completed' : '';
 
   return (
-    <li className="tasks__item">
+    // <li className="tasks__item">
+    <li className={`tasks__item ${complete? `completed`:''}`}>
       <button
         className={`tasks__item__toggle ${buttonClass}`}
         onClick={() => setComplete(!complete)}
@@ -27,3 +28,4 @@ Task.propTypes = {
 };
 
 export default Task;
+
