@@ -32,6 +32,10 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.tasks__item.removed {
+  display: none;
+}
+
 button.tasks__item__remove {
   top: 50%;
   right: 0;
