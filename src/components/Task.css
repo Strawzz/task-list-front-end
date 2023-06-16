@@ -32,6 +32,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+
 button.tasks__item__remove {
   top: 50%;
   right: 0;
@@ -41,8 +42,7 @@ button.tasks__item__remove {
   font-size: 100%;
   margin: 0;
 }
-.tasks__item.completed button{
-  text-decoration: line-through;
-  color:gray
-}
 
+.tasks__item.removed {
+  display: none;
+}
