@@ -25,7 +25,7 @@ const App = () => {
   const toggleComplete = (id) => {
       setTasks(() => tasks.map((task) => {
         if(task.id === id){
-          console.log(`toggle task ${id} completed`)
+          console.log(`toggle task ${id} completed`);
           return {...task, isComplete: !task.isComplete};
         }
         else{
